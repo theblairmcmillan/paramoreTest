@@ -10,57 +10,69 @@
 	<div class="container">
 		<!--HEADING/MENU  ROW --> 
 		<div class="row header">
-			<div class="col-md-12">
+			<div class="col-xs-12">
 				<img id="logo" src="images/logo.svg">
 			</div>
 		</div>
 
 		<!--HERO TEXT ROW -->
 		<div class="row hero">
-			<div class="col-md-12">
+			<div class="col-xs-12">
 				<h1>Targeted Analysis</h1>
 			</div>
 		</div>
 
 		<!-- SUB HEADING ROW -->
 		<div class="row subheader">
-			<div class="col-md-12">
+			<div class="col-xs-12">
 				<h4>The path to your Targeted Media Plan starts here!</h4>
 			</div>
 		</div>
 
 		<!--SMALL TRIANGLE CONTAINER -->
-		<div class="row">
-			<div class="col-md-1 col-md-offsett-11"></div>
+		<div class="row triangleRow">
+			<div id="triangle">
+				<img src="images/triangle.png">
+			</div>
 		</div>
 
 		<!-- FORM ROW -->
 		<div class="row">
 			<!-- FORM COLUMN -->
-			<div class="col-md-8 col-md-offset-2">
-				<div class="col-md-6">
-					<h3>Your Information</h3>
-					<h4>Information about you and your business</h4>
-					<input type="text" name="companyName" placeholder="Company Name">
-					<input type="text" name="businessType" placeholder="Business Type">
-					<input type="text" name="username" placeholder="Your Name">
-					<input type="text" name="userEmail" placeholder="Your Email Address">
-				</div> 
-				<div class="col-md-6">
-					<h5>COME BACK TO THIS QUESTION</h5>
-				    <input type="text" name="businessStreetAddress" placeholder="Business Street Address">
-				    <input type="text" name="businessSuite" placeholder="Business Suite/Apt Number (Optional)">
-				    <input type="text" name="businessCity" placeholder="Business City">
-				    <div class="row">
-					    <div class="col-md-8">
-					    	<input type="text" name="Business State" placeholder="Business State">
+			<div class="col-xs-8 col-xs-offset-2 relative" id="mainForm">
+				<div class="row">
+					<div class="col-xs-6">
+						<h3>Your Information</h3>
+						<h5>Information about you and your business</h5>
+					</div>
+					<div class="col-xs-6 rightAlign">
+						<h5>COME BACK TO THIS QUESTION</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<input type="text" name="companyName" placeholder="Company Name">
+						<input type="text" name="businessType" placeholder="Business Type">
+						<input type="text" name="username" placeholder="Your Name">
+						<input type="text" name="userEmail" placeholder="Your Email Address">
+					</div> 
+					<div class="col-xs-6" id="colTwo">
+					    <input type="text" name="businessStreetAddress" placeholder="Business Street Address">
+					    <input type="text" name="businessSuite" placeholder="Business Suite/Apt Number (Optional)">
+					    <input type="text" name="businessCity" placeholder="Business City">
+					    <div class="row">
+						    <div class="col-xs-8">
+						    	<input type="text" name="Business State" placeholder="Business State">
+						    </div>
+						    <div class="col-xs-4">
+						    	<input type="text" name="Zip Code" placeholder="Zip Code">
+						    </div>
 					    </div>
-					    <div class="col-md-4">
-					    	<input type="text" name="Zip Code" placeholder="Zip Code">
-					    </div>
-				    </div>
-				    <!--NEXT QUESTION BUTTON -->
-				    <button type="button" class="btn btn-primary">SUBMIT</button>
+					</div>
+				</div>
+					<!--NEXT QUESTION BUTTON -->
+				<div id="nextQuestion" class="row">
+					<button type="button" class="btn btn-primary">NEXT QUESTION</button>
 				</div>
 			</div>
 		</div>
@@ -68,7 +80,7 @@
 		<!--INACTIVE BOTTOM FORM -->
 		<div class="row">
 			<!-- FORM COLUMN -->
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-xs-8 col-sx-offset-2">
 				<div>
 					<h3>Why you?</h3>
 				</div>
@@ -90,7 +102,7 @@
 
 		<!-- FOOTER SPACE-->
 		<div class="row">
-			<div="col-md-12"></div>
+			<div="col-xs-12"></div>
 		</div>
 
 	</div> <!--END OF CONTAINER DIV -->
