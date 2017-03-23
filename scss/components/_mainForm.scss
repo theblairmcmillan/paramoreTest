@@ -27,6 +27,10 @@
 		margin-top: 5px;
 	}
 
+	input:focus {
+		outline: 2px solid #5ab29f;
+	}
+
 	h3 {
 		margin-top: 0px;
 	}
@@ -46,9 +50,16 @@
 		bottom: 0;
 		width: 100%;
 
+		button:focus {
+			outline: none;
+		}
+
 		button {
-			width: 100%;
+			width: 99%;
+			border: 0px;
 			border-radius: 0;
+			background-color: #5ab29f;
+
 		}
 	}
 }
