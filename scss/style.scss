@@ -3,12 +3,14 @@
 @import "components/heroText";
 @import "components/subHeader";
 @import "components/mainForm";
+@import "components/inactiveForm";
 
 
 body {
 	margin: 0;
 	height: 100%;
 	background-image: url(/images/background.png);
+	font-family: 'Montserrat', sans-serif;
 }
 
 .container {

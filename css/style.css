@@ -53,10 +53,16 @@ h4 {
     #mainForm #nextQuestion button {
       width: 100%; }
 
+.inactive {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px 10px 10px 20px; }
+
 body {
   margin: 0;
   height: 100%;
-  background-image: url(/images/background.png); }
+  background-image: url(/images/background.png);
+  font-family: 'Montserrat', sans-serif; }
 
 .container {
   width: 100%;
