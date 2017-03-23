@@ -32,7 +32,7 @@ h4 {
 
 #mainForm {
   background-color: #fff;
-  min-height: 400px;
+  min-height: 370px;
   padding: 20px 20px 0;
   position: relative; }
   #mainForm input {
@@ -51,12 +51,22 @@ h4 {
     bottom: 0;
     width: 100%; }
     #mainForm #nextQuestion button {
-      width: 100%; }
+      width: 100%;
+      border-radius: 0; }
 
 .inactive {
   background-color: #fff;
   margin-top: 20px;
-  padding: 10px 10px 10px 20px; }
+  padding: 10px 10px 10px 20px;
+  min-height: 60px; }
+
+.submitButton {
+  text-align: center;
+  margin-top: 20px; }
+  .submitButton > button {
+    border-radius: 0;
+    width: 200px;
+    height: 50px; }
 
 body {
   margin: 0;
