@@ -6,6 +6,13 @@
     height: 100px;
     width: 150px; }
 
+.hero {
+  margin-top: 150px; }
+  .hero h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 4em; }
+
 body {
   margin: 0;
   height: 100%;
