@@ -39,6 +39,8 @@ h4 {
     width: 100%;
     height: 40px;
     margin-top: 5px; }
+  #mainForm input:focus {
+    outline: 2px solid #5ab29f; }
   #mainForm h3 {
     margin-top: 0px; }
   #mainForm .rightAlign {
@@ -50,9 +52,13 @@ h4 {
     position: absolute;
     bottom: 0;
     width: 100%; }
+    #mainForm #nextQuestion button:focus {
+      outline: none; }
     #mainForm #nextQuestion button {
-      width: 100%;
-      border-radius: 0; }
+      width: 99%;
+      border: 0px;
+      border-radius: 0;
+      background-color: #5ab29f; }
 
 .inactive {
   background-color: #fff;
@@ -63,10 +69,14 @@ h4 {
 .submitButton {
   text-align: center;
   margin-top: 20px; }
+  .submitButton button:focus {
+    outline: none; }
   .submitButton > button {
+    border: 0px;
     border-radius: 0;
     width: 200px;
-    height: 50px; }
+    height: 50px;
+    background-color: #5ab29f; }
 
 .footer {
   margin-top: 50px;
