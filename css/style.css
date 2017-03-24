@@ -1,30 +1,33 @@
 .header {
   background-color: #025f9a;
-  height: 90px;
+  height: 70px;
   text-align: center; }
   .header #logo {
     height: 100px;
-    width: 150px; }
+    width: 100px;
+    padding-bottom: 30px; }
 
 .hero {
   margin-top: 150px; }
   .hero h1 {
     color: #fff;
     text-align: center;
-    font-size: 4em; }
+    font-size: 5em;
+    letter-spacing: 1px; }
 
 h4 {
   color: #fff;
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 50px;
-  font-size: .9em; }
+  font-size: .9em;
+  letter-spacing: 1px; }
 
 #triangle {
   background-color: #fff;
   position: center;
   width: 60px;
-  height: 40px;
+  height: 30px;
   margin: 0 auto;
   text-align: center; }
   #triangle > img {
@@ -33,20 +36,40 @@ h4 {
 #mainForm {
   background-color: #fff;
   min-height: 370px;
-  padding: 20px 20px 0;
   position: relative; }
+  #mainForm h5 {
+    color: #78715b; }
+  #mainForm input {
+    cursor: pointer;
+    cursor: hand; }
+  #mainForm .inputCol {
+    padding-top: 20px; }
+  #mainForm #formInputs {
+    padding: 20px 20px 0; }
+  #mainForm ::-webkit-input-placeholder {
+    color: 7f7f7f;
+    font-size: 0.7em; }
   #mainForm input {
     width: 100%;
     height: 40px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    text-indent: 30px; }
+  #mainForm .activeCheck {
+    background-image: url("../images/check.png");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 4% 50%; }
   #mainForm input:focus {
     outline: 2px solid #5ab29f; }
   #mainForm h3 {
-    margin-top: 0px; }
+    margin-top: 0px;
+    font-family: Montserrat;
+    font-weight: 600; }
   #mainForm .rightAlign {
     text-align: right; }
     #mainForm .rightAlign h5 {
-      font-size: 0.6em; }
+      font-size: 0.6em;
+      color: #d9d9d9; }
   #mainForm #nextQuestion {
     margin-top: 40px;
     position: absolute;
@@ -55,16 +78,19 @@ h4 {
     #mainForm #nextQuestion button:focus {
       outline: none; }
     #mainForm #nextQuestion button {
-      width: 99%;
+      width: 100%;
       border: 0px;
       border-radius: 0;
-      background-color: #5ab29f; }
+      background-color: #5ab29f;
+      letter-spacing: 1px;
+      fonr-size: 0.8em; }
 
 .inactive {
   background-color: #fff;
   margin-top: 20px;
-  padding: 10px 10px 10px 20px;
-  min-height: 60px; }
+  padding: 10px 10px 10px 30px;
+  min-height: 50px;
+  opacity: 0.8; }
 
 .submitButton {
   text-align: center;
@@ -75,8 +101,9 @@ h4 {
     border: 0px;
     border-radius: 0;
     width: 200px;
-    height: 50px;
-    background-color: #5ab29f; }
+    height: 40px;
+    background-color: #5ab29f;
+    letter-spacing: 1px; }
 
 .footer {
   margin-top: 50px;
