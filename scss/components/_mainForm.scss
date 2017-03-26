@@ -2,7 +2,7 @@
 
 #triangle {
 	background-color: $white;
-	position: center;
+	background-position: center;
 	width: 60px;
 	height: 30px;
 	margin: 0 auto;
@@ -28,8 +28,7 @@
 	}
 
 	input {
-		cursor: pointer; 
-		cursor: hand;
+		cursor: pointer;
 	}
 
 	.inputCol {
@@ -42,8 +41,9 @@
 		input {
 			width: 100%;
 			height: 40px;
-			margin-top: 5px;
+			margin-top: 8px;
 			padding-left: 15px;
+			border: 1px solid $light-grey !important;
 
 			&:focus {
 				outline: 2px solid $teal;
@@ -60,6 +60,17 @@
 			background-repeat: no-repeat;	
 			background-size: 15px 15px;
 			background-position: 4% 50%;
+		}
+
+		.state-zip-cols {
+			@media (min-width: 768px) {
+				.state {
+					padding-right: .2em;
+				}
+				.zip {
+					padding-left: .2em;
+				}
+			}
 		}
 	}
 
@@ -92,8 +103,8 @@
 
 		button {
 			width: 100%;
-			border: 0px;
-			border-radius: 0;
+			border: none;
+			border-radius: 0px;
 			background-color: $teal;
 			letter-spacing: 1px;
 			font-size: 0.8em;
