@@ -1,5 +1,4 @@
 
-
 #triangle {
 	background-color: $white;
 	background-position: center;
@@ -14,66 +13,10 @@
 
 }
 
-.indented {
-	text-indent: 15px;
-}
-
-#mainForm {
-	background-color: $white;
-	min-height: 370px;
-	position: relative;
-
-	h5 {
-		color: #78715b;
+form {
+	.indented {
+		text-indent: 15px;
 	}
-
-	input {
-		cursor: pointer;
-	}
-
-	.inputCol {
-		padding-top: 20px;
-	}
-
-	#formInputs {
-		padding: 30px 30px 0;
-
-		input {
-			width: 100%;
-			height: 40px;
-			margin-top: 8px;
-			padding-left: 15px;
-			border: 1px solid $light-grey !important;
-
-			&:focus {
-				outline: 2px solid $teal;
-			}
-		}
-
-		::-webkit-input-placeholder { 
-			color: $dark-placeholder-grey;
-			font-size: 0.7em;
-		}
-
-		.activeCheck {
-			background-image: url('../images/check.png');
-			background-repeat: no-repeat;	
-			background-size: 15px 15px;
-			background-position: 4% 50%;
-		}
-
-		.state-zip-cols {
-			@media (min-width: 768px) {
-				.state {
-					padding-right: .2em;
-				}
-				.zip {
-					padding-left: .2em;
-				}
-			}
-		}
-	}
-
 
 	h3 {
 		margin-top: 0px;
@@ -81,33 +24,103 @@
 		font-weight: 600;
 	}
 
-	.rightAlign {
-		text-align: right;
-		
+	//
+	// Your Information section
+	//
+	#mainForm {
+		min-height: 370px;
+		position: relative;
+		background-color: $white;
+
 		h5 {
-			font-size: 0.6em;
-			color: $light-grey;
+			color: #78715b;
+		}
+
+		input {
+			cursor: pointer;
+		}
+
+		.inputCol {
+			padding-top: 20px;
+		}
+
+		#formInputs {
+			padding: 30px 30px 0;
+
+			input {
+				width: 100%;
+				height: 40px;
+				margin-top: 8px;
+				padding-left: 15px;
+				border: 1px solid $light-grey !important;
+
+				&:focus {
+					outline: 2px solid $teal;
+				}
+			}
+
+			::-webkit-input-placeholder {
+				color: $dark-placeholder-grey;
+				font-size: 0.7em;
+			}
+
+			.activeCheck {
+				background-image: url('../images/check.png');
+				background-repeat: no-repeat;
+				background-size: 15px 15px;
+				background-position: 4% 50%;
+			}
+
+			.state-zip-cols {
+				@media (min-width: 768px) {
+					.state {
+						padding-right: .2em;
+					}
+					.zip {
+						padding-left: .2em;
+					}
+				}
+			}
+		}
+
+		.rightAlign {
+			text-align: right;
+			
+			h5 {
+				font-size: 0.6em;
+				color: $light-grey;
+			}
+		}
+
+
+		#nextQuestion {
+			margin-top: 40px;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+
+			button:focus {
+				outline: none;
+			}
+
+			button {
+				width: 100%;
+				border: none;
+				border-radius: 0px;
+				background-color: $teal;
+				letter-spacing: 1px;
+				font-size: 0.8em;
+			}
 		}
 	}
 
+	//
+	// Why You? section
+	//
 
-	#nextQuestion {
-		margin-top: 40px;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
+	#whyYou {
+		input {
 
-		button:focus {
-			outline: none;
-		}
-
-		button {
-			width: 100%;
-			border: none;
-			border-radius: 0px;
-			background-color: $teal;
-			letter-spacing: 1px;
-			font-size: 0.8em;
 		}
 	}
 }

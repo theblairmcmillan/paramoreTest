@@ -55,59 +55,58 @@ body {
   #triangle > img {
     padding-top: 30%; }
 
-.indented {
+form .indented {
   text-indent: 15px; }
-
-#mainForm {
-  background-color: #fff;
+form h3 {
+  margin-top: 0px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600; }
+form #mainForm {
   min-height: 370px;
-  position: relative; }
-  #mainForm h5 {
+  position: relative;
+  background-color: #fff; }
+  form #mainForm h5 {
     color: #78715b; }
-  #mainForm input {
+  form #mainForm input {
     cursor: pointer; }
-  #mainForm .inputCol {
+  form #mainForm .inputCol {
     padding-top: 20px; }
-  #mainForm #formInputs {
+  form #mainForm #formInputs {
     padding: 30px 30px 0; }
-    #mainForm #formInputs input {
+    form #mainForm #formInputs input {
       width: 100%;
       height: 40px;
       margin-top: 8px;
       padding-left: 15px;
       border: 1px solid #d9d9d9 !important; }
-      #mainForm #formInputs input:focus {
+      form #mainForm #formInputs input:focus {
         outline: 2px solid #5ab29f; }
-    #mainForm #formInputs ::-webkit-input-placeholder {
+    form #mainForm #formInputs ::-webkit-input-placeholder {
       color: #7f7f7f;
       font-size: 0.7em; }
-    #mainForm #formInputs .activeCheck {
+    form #mainForm #formInputs .activeCheck {
       background-image: url("../images/check.png");
       background-repeat: no-repeat;
       background-size: 15px 15px;
       background-position: 4% 50%; }
     @media (min-width: 768px) {
-      #mainForm #formInputs .state-zip-cols .state {
+      form #mainForm #formInputs .state-zip-cols .state {
         padding-right: .2em; }
-      #mainForm #formInputs .state-zip-cols .zip {
+      form #mainForm #formInputs .state-zip-cols .zip {
         padding-left: .2em; } }
-  #mainForm h3 {
-    margin-top: 0px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 600; }
-  #mainForm .rightAlign {
+  form #mainForm .rightAlign {
     text-align: right; }
-    #mainForm .rightAlign h5 {
+    form #mainForm .rightAlign h5 {
       font-size: 0.6em;
       color: #d9d9d9; }
-  #mainForm #nextQuestion {
+  form #mainForm #nextQuestion {
     margin-top: 40px;
     position: absolute;
     bottom: 0;
     width: 100%; }
-    #mainForm #nextQuestion button:focus {
+    form #mainForm #nextQuestion button:focus {
       outline: none; }
-    #mainForm #nextQuestion button {
+    form #mainForm #nextQuestion button {
       width: 100%;
       border: none;
       border-radius: 0px;

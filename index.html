@@ -39,61 +39,76 @@
 		</div>
 
 		<!-- FORM ROW -->
-		<div class="row">
-			<!-- FORM COLUMN -->
-			<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 relative" id="mainForm">
-				<div class="row" id="formInputs">
-					<div class="row">
-						<div class="col-xs-6">
-							<h3>Your Information</h3>
-							<h5>Information about you and your business.</h5>
+		<form>
+			<div class="row">
+				<!-- FORM COLUMN -->
+				<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 relative" id="mainForm">
+					<div class="row" id="formInputs">
+						<div class="row">
+							<div class="col-xs-6">
+								<h3>Your Information</h3>
+								<h5>Information about you and your business.</h5>
+							</div>
+							<div class="col-xs-6 rightAlign">
+								<h5>COME BACK TO THIS QUESTION</h5>
+							</div>
 						</div>
-						<div class="col-xs-6 rightAlign">
-							<h5>COME BACK TO THIS QUESTION</h5>
+						<div class="row">
+							<div class="col-sm-6 col-xs-12 inputCol">
+								<input type="text" name="companyName" placeholder="Company Name">
+								<input type="text" name="businessType" placeholder="Business Type">
+								<input type="text" name="username" placeholder="Your Name">
+								<input type="text" name="userEmail" placeholder="Your Email Address">
+							</div> 
+							<div class="col-sm-6 col-xs-12 inputCol" id="colTwo">
+							    <input type="text" name="businessStreetAddress" placeholder="Business Street Address">
+							    <input type="text" name="businessSuite" placeholder="Business Suite/Apt Number (Optional)">
+							    <input type="text" name="businessCity" placeholder="Business City">
+							    <div class="row state-zip-cols">
+								    <div class="col-sm-8 col-xs-12 state">
+								    	<input type="text" name="Business State" placeholder="Business State">
+								    </div>
+								    <div class="col-sm-4 col-xs-12 zip">
+								    	<input type="text" name="Zip Code" placeholder="Zip Code">
+								    </div>
+							    </div>
+							</div>
 						</div>
 					</div>
+						<!--NEXT QUESTION BUTTON -->
+					<div id="nextQuestion" class="row">
+						<button type="button" class="btn btn-primary">NEXT QUESTION ></button>
+					</div>
+				</div>
+			</div>
+
+			<!--INACTIVE BOTTOM FORM -->
+			<div id="whyYou" class="row">
+				<!-- FORM COLUMN -->
+				<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 inactive">
+					<div class="row show">
+						<h3>Why you?</h3>
+						<h5>Why do customers choose you over the competition?</h5>
+					</div>
 					<div class="row">
-						<div class="col-sm-6 col-xs-12 inputCol">
-							<input type="text" name="companyName" placeholder="Company Name">
-							<input type="text" name="businessType" placeholder="Business Type">
-							<input type="text" name="username" placeholder="Your Name">
-							<input type="text" name="userEmail" placeholder="Your Email Address">
-						</div> 
-						<div class="col-sm-6 col-xs-12 inputCol" id="colTwo">
-						    <input type="text" name="businessStreetAddress" placeholder="Business Street Address">
-						    <input type="text" name="businessSuite" placeholder="Business Suite/Apt Number (Optional)">
-						    <input type="text" name="businessCity" placeholder="Business City">
-						    <div class="row state-zip-cols">
-							    <div class="col-sm-8 col-xs-12 state">
-							    	<input type="text" name="Business State" placeholder="Business State">
-							    </div>
-							    <div class="col-sm-4 col-xs-12 zip">
-							    	<input type="text" name="Zip Code" placeholder="Zip Code">
-							    </div>
-						    </div>
+						<div class="col-sm-6 col-xs-12">
+							<input type="radio" name="customer-choice" value="customer-service">BEST CUSTOMER SERVICE<br>
+							<input type="radio" name="customer-choice" value="price">BEST PRICE<br>
+							<input type="radio" name="customer-choice" value="quality">QUALITY PRODUCT
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<input type="radio" name="customer-choice" value="reputation">REPUTATION/TRUST<br>
+							<input type="radio" name="customer-choice" value="other">OTHER
 						</div>
 					</div>
 				</div>
-					<!--NEXT QUESTION BUTTON -->
-				<div id="nextQuestion" class="row">
-					<button type="button" class="btn btn-primary">NEXT QUESTION ></button>
-				</div>
 			</div>
-		</div>
 
-		<!--INACTIVE BOTTOM FORM -->
-		<div class="row">
-			<!-- FORM COLUMN -->
-			<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 inactive">
-				<h3>Why you?</h3>
-				<h5>Why do customers choose you over the competition?</h5>
+			<!-- SUBMIT BUTTON -->
+			<div class="row submitButton">
+				<button type="button" class="btn btn-primary">SUBMIT</button>
 			</div>
-		</div>
-
-		<!-- SUBMIT BUTTON -->
-		<div class="row submitButton">
-			<button type="button" class="btn btn-primary">SUBMIT</button>
-		</div>
+		</form>
 
 		<!--COPYRIGHT SECTION -->
 		<div class="row footer">
