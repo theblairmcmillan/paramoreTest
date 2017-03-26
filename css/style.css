@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+  height: 100%;
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif; }
+
+.container {
+  width: 100%;
+  margin: 0; }
+
 .header {
   background-color: #025f9a;
   height: 70px;
@@ -15,7 +28,7 @@
     font-size: 5em;
     letter-spacing: 1px; }
 
-h4 {
+.subheader h4 {
   color: #fff;
   text-align: center;
   margin-top: 10px;
@@ -33,6 +46,9 @@ h4 {
   #triangle > img {
     padding-top: 30%; }
 
+.indented {
+  text-indent: 15px; }
+
 #mainForm {
   background-color: #fff;
   min-height: 370px;
@@ -45,31 +61,31 @@ h4 {
   #mainForm .inputCol {
     padding-top: 20px; }
   #mainForm #formInputs {
-    padding: 20px 20px 0; }
-  #mainForm ::-webkit-input-placeholder {
-    color: 7f7f7f;
-    font-size: 0.7em; }
-  #mainForm input {
-    width: 100%;
-    height: 40px;
-    margin-top: 5px;
-    text-indent: 30px; }
-  #mainForm .activeCheck {
-    background-image: url("../images/check.png");
-    background-repeat: no-repeat;
-    background-size: 15px 15px;
-    background-position: 4% 50%; }
-  #mainForm input:focus {
-    outline: 2px solid #5ab29f; }
+    padding: 30px 30px 0; }
+    #mainForm #formInputs input {
+      width: 100%;
+      height: 40px;
+      margin-top: 5px;
+      padding-left: 15px; }
+      #mainForm #formInputs input:focus {
+        outline: 2px solid #5ab29f; }
+    #mainForm #formInputs ::-webkit-input-placeholder {
+      color: #7f7f7f;
+      font-size: 0.7em; }
+    #mainForm #formInputs .activeCheck {
+      background-image: url("../images/check.png");
+      background-repeat: no-repeat;
+      background-size: 15px 15px;
+      background-position: 4% 50%; }
   #mainForm h3 {
     margin-top: 0px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 600; }
   #mainForm .rightAlign {
     text-align: right; }
     #mainForm .rightAlign h5 {
       font-size: 0.6em;
-      color: #d9d9d9; }
+      color: #d9d9d; }
   #mainForm #nextQuestion {
     margin-top: 40px;
     position: absolute;
@@ -83,7 +99,7 @@ h4 {
       border-radius: 0;
       background-color: #5ab29f;
       letter-spacing: 1px;
-      fonr-size: 0.8em; }
+      font-size: 0.8em; }
 
 .inactive {
   background-color: #fff;
@@ -111,15 +127,5 @@ h4 {
   text-align: center;
   color: #fff;
   font-size: .8em; }
-
-body {
-  margin: 0;
-  height: 100%;
-  background-image: url(/images/background.png);
-  font-family: 'Montserrat', sans-serif; }
-
-.container {
-  width: 100%;
-  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
