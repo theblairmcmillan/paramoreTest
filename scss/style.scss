@@ -1,4 +1,7 @@
 
+@import "base/variables";
+@import "base/application";
+
 @import "components/header";
 @import "components/heroText";
 @import "components/subHeader";
@@ -6,17 +9,3 @@
 @import "components/inactiveForm";
 @import "components/submitButton";
 @import "components/footer";
-
-
-body {
-	margin: 0;
-	height: 100%;
-	background-image: url(/images/background.png);
-	font-family: 'Montserrat', sans-serif;
-}
-
-.container {
-	width: 100%;
-	margin: 0;
-	
-}
