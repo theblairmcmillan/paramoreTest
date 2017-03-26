@@ -76,7 +76,7 @@
 						</div>
 					</div>
 						<!--NEXT QUESTION BUTTON -->
-					<div id="nextQuestion" class="row">
+					<div class="row nextQuestion">
 						<button type="button" class="btn btn-primary">NEXT QUESTION ></button>
 					</div>
 				</div>
@@ -86,20 +86,29 @@
 			<div id="whyYou" class="row">
 				<!-- FORM COLUMN -->
 				<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 inactive">
-					<div class="row show">
+					<div class="row show form-heading">
 						<h3>Why you?</h3>
 						<h5>Why do customers choose you over the competition?</h5>
 					</div>
-					<div class="row">
+					<div class="row form-inputs">
 						<div class="col-sm-6 col-xs-12">
-							<input type="radio" name="customer-choice" value="customer-service">BEST CUSTOMER SERVICE<br>
-							<input type="radio" name="customer-choice" value="price">BEST PRICE<br>
-							<input type="radio" name="customer-choice" value="quality">QUALITY PRODUCT
+							<input type="radio" name="customer-choice" value="customer-service" id="radio1">
+							<label for="radio1">BEST CUSTOMER SERVICE</label><br>
+							<input type="radio" name="customer-choice" value="price" id="radio2">
+							<label for="radio2">BEST PRICE</label><br>
+							<input type="radio" name="customer-choice" value="quality" ID="radio3">
+							<label for="radio2">QUALITY PRODUCT</label><br>
 						</div>
 						<div class="col-sm-6 col-xs-12">
-							<input type="radio" name="customer-choice" value="reputation">REPUTATION/TRUST<br>
-							<input type="radio" name="customer-choice" value="other">OTHER
+							<input type="radio" name="customer-choice" value="reputation" id="radio4">
+							<label for="radio4">REPUTATION/TRUST</label><br>
+							<input type="radio" name="customer-choice" value="other" id="radio5">
+							<label for="radio5">OTHER</label>
 						</div>
+					</div>
+					<!--NEXT QUESTION BUTTON -->
+					<div class="row nextQuestion">
+						<button type="button" class="btn btn-primary">NEXT QUESTION ></button>
 					</div>
 				</div>
 			</div>

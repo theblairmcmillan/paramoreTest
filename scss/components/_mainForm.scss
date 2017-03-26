@@ -45,7 +45,7 @@ form {
 		}
 
 		#formInputs {
-			padding: 30px 30px 0;
+			padding: 30px 30px 45px;
 
 			input {
 				width: 100%;
@@ -91,38 +91,40 @@ form {
 				color: $light-grey;
 			}
 		}
+	}
 
+	.nextQuestion {
+		margin-top: 40px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 
-		#nextQuestion {
-			margin-top: 40px;
-			position: absolute;
-			bottom: 0;
+		button:focus {
+			outline: none;
+		}
+
+		button {
 			width: 100%;
-
-			button:focus {
-				outline: none;
-			}
-
-			button {
-				width: 100%;
-				border: none;
-				border-radius: 0px;
-				background-color: $teal;
-				letter-spacing: 1px;
-				font-size: 0.8em;
-			}
+			border: none;
+			border-radius: 0px;
+			background-color: $teal;
+			letter-spacing: 1px;
+			font-size: 0.8em;
 		}
 	}
 
 	//
 	// Why You? section
 	//
-
 	#whyYou {
-		input {
-
+		.form-heading {
+			padding: 20px 20px 0;
+		}
+		.form-inputs {
+			padding: 0 20px 45px;
 		}
 	}
+
 }
 
 
