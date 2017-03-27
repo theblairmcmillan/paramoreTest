@@ -45,6 +45,7 @@ form {
 
 		.editSection {
 			display: inline-block;
+			cursor: pointer;
 		}
 
 		input {
@@ -135,6 +136,11 @@ form {
 		background-color: $white;
 		margin-top: 20px;
 		min-height: 50px;
+
+		h5 {
+			padding-bottom: 10px;
+			font-size: 0.8em;
+		}
 
 		&.inactive {
 			opacity: 0.8;

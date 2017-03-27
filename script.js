@@ -8,6 +8,7 @@ $(function() {
 	var whyYouButton = $("#whyYou .nextQuestion");
 	var whyYouRadioButtons = $("#whyYou .form-inputs label");
 	var nextQuestionButton = $("#mainForm .nextQuestion");
+	var editSection = $(".editSection");
 
 	inputs.keyup(function(e) {
 		if ($(e.target).val() != "") {
@@ -34,6 +35,18 @@ $(function() {
 	whyYouRadioButtons.click(function(e) {
 		whyYouRadioButtons.removeClass("selected");
 		$(this).addClass("selected");
+	})
+
+
+	editSection.click(function() {
+		$(".editSection").addClass("hidden");
+		$("#mainCheck").addClass("hidden");
+		$("#formInputs h5").first().css("padding-left", "0");
+		$("#comeBack").removeClass("hidden");
+		mainInputs.removeClass("hidden");
+		whyYouInputs.addClass("hidden");
+		nextQuestionButton.removeClass("hidden");
+		whyYouButton.addClass("hidden");
 	})
 
 
