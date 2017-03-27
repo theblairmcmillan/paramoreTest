@@ -117,6 +117,29 @@ form #whyYou .form-heading {
   padding: 20px 20px 0; }
 form #whyYou .form-inputs {
   padding: 0 20px 45px; }
+  form #whyYou .form-inputs label {
+    border: 2px solid #5ab29f;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    letter-spacing: 1px;
+    font-size: .8em;
+    display: table; }
+    form #whyYou .form-inputs label input {
+      visibility: hidden;
+      width: 1px; }
+    form #whyYou .form-inputs label input[type="radio"]:checked + label {
+      background-color: #5ab29f;
+      color: #fff;
+      cursor: pointer; }
+    form #whyYou .form-inputs label span {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%; }
+  form #whyYou .form-inputs label:hover {
+    background-color: #5ab29f;
+    color: #fff;
+    cursor: pointer; }
 
 .inactive {
   background-color: #fff;

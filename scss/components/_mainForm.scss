@@ -122,6 +122,40 @@ form {
 		}
 		.form-inputs {
 			padding: 0 20px 45px;
+
+
+			label {
+				border: 2px solid $teal;
+				text-align: center;
+				width: 100%;
+				height: 40px;
+				letter-spacing: 1px;
+				font-size: .8em;
+				display: table;
+
+				input {
+					visibility: hidden;
+					width: 1px;
+				}
+
+				input[type="radio"]:checked+label {
+				background-color: $teal;
+				color: $white;
+				cursor: pointer;
+				}
+
+				span {
+					display: table-cell;
+					vertical-align: middle;
+					width: 100%;
+				}
+			}
+
+			label:hover {
+				background-color: $teal;
+				color: $white;
+				cursor: pointer;
+			}
 		}
 	}
 
