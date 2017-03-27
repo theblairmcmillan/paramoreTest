@@ -70,14 +70,24 @@ form h3 {
 form #mainForm {
   position: relative;
   background-color: #fff; }
+  form #mainForm #mainCheck {
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-top: 6px;
+    margin-right: 5px; }
   form #mainForm h5 {
     color: #78715b; }
+  form #mainForm .editSection {
+    display: inline-block; }
   form #mainForm input {
     cursor: pointer; }
   form #mainForm .inputCol {
     padding-top: 20px; }
   form #mainForm #formInputs {
-    padding: 30px 30px 45px; }
+    padding: 30px 30px 20px; }
+    form #mainForm #formInputs .mainInputs {
+      margin-bottom: 35px; }
     form #mainForm #formInputs input {
       width: 100%;
       height: 40px;

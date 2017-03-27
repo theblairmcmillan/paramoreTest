@@ -28,12 +28,23 @@ form {
 	// Your Information section
 	//
 	#mainForm {
-		// min-height: 370px;
 		position: relative;
 		background-color: $white;
 
+		#mainCheck {
+			float: left;
+			height: 15px;
+			width: 15px;
+			margin-top: 6px;
+			margin-right: 5px;
+		}
+
 		h5 {
 			color: #78715b;
+		}
+
+		.editSection {
+			display: inline-block;
 		}
 
 		input {
@@ -45,7 +56,11 @@ form {
 		}
 
 		#formInputs {
-			padding: 30px 30px 45px;
+			padding: 30px 30px 20px;
+
+			.mainInputs {
+				margin-bottom: 35px;
+			}
 
 			input {
 				width: 100%;
