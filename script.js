@@ -9,6 +9,7 @@ $(function() {
 	var whyYouRadioButtons = $("#whyYou .form-inputs label");
 	var nextQuestionButton = $("#mainForm .nextQuestion");
 	var editSection = $(".editSection");
+	var comeBackButton = $("#comeBackButton");
 
 	// MAIN FORM INPUTS
 
@@ -39,6 +40,20 @@ $(function() {
 	whyYouRadioButtons.click(function(e) {
 		whyYouRadioButtons.removeClass("selected");
 		$(this).addClass("selected");
+	})
+
+
+	// COME BACK TO THIS SECTION
+
+	comeBackButton.click(function() {
+		$(this).addClass('hidden');
+		mainInputs.addClass("hidden");
+		nextQuestionButton.addClass("hidden");
+		$('.editSection').removeClass("hidden");
+
+		whyYouContainer.removeClass("inactive").addClass("active");
+		whyYouInputs.removeClass("hidden");
+		whyYouButton.removeClass("hidden");
 	})
 
 	// EDIT SECTION BUTTON
