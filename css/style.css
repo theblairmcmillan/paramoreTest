@@ -1,21 +1,27 @@
 body {
   margin: 0;
   height: 100%;
-  background-image: url("/images/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   font-family: 'Montserrat', sans-serif; }
 
 .container {
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
-.header {
+#mainContent {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#header {
   background-color: #025f9a;
   height: 70px;
-  text-align: center; }
-  .header #logo {
+  text-align: center;
+  margin: 0; }
+  #header #logo {
     height: 100px;
     width: 100px;
     padding-bottom: 30px; }
@@ -62,7 +68,6 @@ form h3 {
   font-family: Montserrat, sans-serif;
   font-weight: 600; }
 form #mainForm {
-  min-height: 370px;
   position: relative;
   background-color: #fff; }
   form #mainForm h5 {
@@ -113,39 +118,46 @@ form .nextQuestion {
     background-color: #5ab29f;
     letter-spacing: 1px;
     font-size: 0.8em; }
-form #whyYou .form-heading {
-  padding: 20px 20px 0; }
-form #whyYou .form-inputs {
-  padding: 0 20px 45px; }
-  form #whyYou .form-inputs label {
-    border: 2px solid #5ab29f;
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    letter-spacing: 1px;
-    font-size: .8em;
-    display: table; }
-    form #whyYou .form-inputs label input {
-      visibility: hidden;
-      width: 1px; }
-    form #whyYou .form-inputs label input[type="radio"]:checked + label {
+form #whyYou {
+  background-color: #fff;
+  margin-top: 20px;
+  min-height: 50px; }
+  form #whyYou.inactive {
+    opacity: 0.8;
+    color: #d9d9d9 !important; }
+  form #whyYou.active {
+    opacity: 1; }
+  form #whyYou h3, form #whyYou h5 {
+    padding-left: 15px; }
+  form #whyYou .form-heading {
+    padding: 20px 20px 0; }
+  form #whyYou .form-inputs {
+    padding: 0 20px 45px; }
+    form #whyYou .form-inputs label {
+      border: 2px solid #5ab29f;
+      text-align: center;
+      width: 100%;
+      height: 40px;
+      letter-spacing: 1px;
+      font-size: .8em;
+      display: table; }
+      form #whyYou .form-inputs label input[type="radio"] {
+        visibility: hidden;
+        width: 10px; }
+      form #whyYou .form-inputs label span {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%; }
+    form #whyYou .form-inputs label:hover {
       background-color: #5ab29f;
       color: #fff;
       cursor: pointer; }
-    form #whyYou .form-inputs label span {
-      display: table-cell;
-      vertical-align: middle;
-      width: 100%; }
-  form #whyYou .form-inputs label:hover {
-    background-color: #5ab29f;
-    color: #fff;
-    cursor: pointer; }
-
-.inactive {
-  background-color: #fff;
-  margin-top: 20px;
-  min-height: 50px;
-  opacity: 0.8; }
+    form #whyYou .form-inputs .selected {
+      background-color: #5ab29f;
+      color: #fff;
+      cursor: pointer; }
+  form #whyYou .form-inputs {
+    margin-top: 20px; }
 
 .submitButton {
   text-align: center;
