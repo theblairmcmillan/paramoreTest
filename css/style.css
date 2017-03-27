@@ -79,7 +79,8 @@ form #mainForm {
   form #mainForm h5 {
     color: #78715b; }
   form #mainForm .editSection {
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
   form #mainForm input {
     cursor: pointer; }
   form #mainForm .inputCol {
@@ -93,7 +94,7 @@ form #mainForm {
       height: 40px;
       margin-top: 8px;
       padding-left: 15px;
-      border: 1px solid #d9d9d9 !important; }
+      border: 1px solid #626f64 !important; }
       form #mainForm #formInputs input:focus {
         outline: 2px solid #5ab29f; }
     form #mainForm #formInputs ::-webkit-input-placeholder {
@@ -113,7 +114,7 @@ form #mainForm {
     text-align: right; }
     form #mainForm .rightAlign h5 {
       font-size: 0.6em;
-      color: #d9d9d9; }
+      color: #626f64; }
 form .nextQuestion {
   margin-top: 40px;
   position: absolute;
@@ -132,9 +133,12 @@ form #whyYou {
   background-color: #fff;
   margin-top: 20px;
   min-height: 50px; }
+  form #whyYou h5 {
+    padding-bottom: 10px;
+    font-size: 0.8em; }
   form #whyYou.inactive {
     opacity: 0.8;
-    color: #d9d9d9 !important; }
+    color: #626f64 !important; }
   form #whyYou.active {
     opacity: 1; }
   form #whyYou h3, form #whyYou h5 {
@@ -178,15 +182,16 @@ form #whyYou {
     border: 0px;
     border-radius: 0;
     width: 200px;
-    height: 40px;
+    height: 37px;
     background-color: #5ab29f;
     letter-spacing: 1px; }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 400px;
   text-align: center;
   color: #fff;
-  font-size: .8em; }
+  font-size: .6em;
+  letter-spacing: 0.5px; }
 
 /*# sourceMappingURL=style.css.map */
