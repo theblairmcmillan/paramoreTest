@@ -1,6 +1,13 @@
 $(function() {
 
 	var inputs = $("#formInputs input");
+	var mainInputs = $("#mainForm .mainInputs");
+	
+	var whyYouContainer = $("#whyYou");
+	var whyYouInputs = $("#whyYou .form-inputs");
+	var whyYouButton = $("#whyYou .nextQuestion");
+	var whyYouRadioButtons = $("#whyYou .form-inputs label");
+	var nextQuestionButton = $("#mainForm .nextQuestion");
 
 	inputs.keyup(function(e) {
 		if ($(e.target).val() != "") {
@@ -9,4 +16,20 @@ $(function() {
 			$(e.target).removeClass("indented activeCheck");
 		}
 	})
+
+	nextQuestionButton.click(function() {
+		mainInputs.addClass("hidden");
+		$(this).addClass("hidden");
+
+		whyYouContainer.removeClass("inactive").addClass("active");
+		whyYouInputs.removeClass("hidden");
+		whyYouButton.removeClass("hidden");
+	})
+
+	whyYouRadioButtons.click(function(e) {
+		whyYouRadioButtons.removeClass("selected");
+		$(this).addClass("selected");
+	})
+
+
 })

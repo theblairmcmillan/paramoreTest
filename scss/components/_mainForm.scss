@@ -28,7 +28,7 @@ form {
 	// Your Information section
 	//
 	#mainForm {
-		min-height: 370px;
+		// min-height: 370px;
 		position: relative;
 		background-color: $white;
 
@@ -117,12 +117,28 @@ form {
 	// Why You? section
 	//
 	#whyYou {
+		background-color: $white;
+		margin-top: 20px;
+		min-height: 50px;
+
+		&.inactive {
+			opacity: 0.8;
+			color: $light-grey !important;
+		}
+
+		&.active {
+			opacity: 1;
+		}
+
+		h3,h5 {
+			padding-left: 15px;
+		}
+
 		.form-heading {
 			padding: 20px 20px 0;
 		}
 		.form-inputs {
 			padding: 0 20px 45px;
-
 
 			label {
 				border: 2px solid $teal;
@@ -133,15 +149,9 @@ form {
 				font-size: .8em;
 				display: table;
 
-				input {
+				input[type="radio"] {
 					visibility: hidden;
-					width: 1px;
-				}
-
-				input[type="radio"]:checked+label {
-				background-color: $teal;
-				color: $white;
-				cursor: pointer;
+					width: 10px;
 				}
 
 				span {
@@ -156,6 +166,18 @@ form {
 				color: $white;
 				cursor: pointer;
 			}
+
+			.selected {
+				background-color: $teal;
+				color: $white;
+				cursor: pointer;
+			}
+
+		}
+
+
+		.form-inputs {
+			margin-top: 20px;
 		}
 	}
 
