@@ -14,7 +14,7 @@ body {
   background-image: url("/images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center 15%; }
 
 #header {
   background-color: #025f9a;
@@ -31,7 +31,7 @@ body {
   .hero h1 {
     color: #fff;
     text-align: center;
-    font-size: 4.8em;
+    font-size: 4.4em;
     letter-spacing: 1px; }
   @media (max-width: 400px) {
     .hero {
@@ -76,8 +76,8 @@ form #mainForm {
     width: 15px;
     margin-top: 6px;
     margin-right: 5px; }
-  form #mainForm h5 {
-    color: #78715b; }
+  form #mainForm .subtext {
+    color: #626f64; }
   form #mainForm .editSection {
     display: inline-block;
     cursor: pointer; }
@@ -112,7 +112,7 @@ form #mainForm {
         padding-left: .2em; } }
   form #mainForm .rightAlign {
     text-align: right; }
-    form #mainForm .rightAlign h5 {
+    form #mainForm .rightAlign p {
       font-size: 0.6em;
       color: #626f64; }
 form .nextQuestion {

@@ -10,6 +10,8 @@ $(function() {
 	var nextQuestionButton = $("#mainForm .nextQuestion");
 	var editSection = $(".editSection");
 
+	// MAIN FORM INPUTS
+
 	inputs.keyup(function(e) {
 		if ($(e.target).val() != "") {
 			$(e.target).addClass("indented activeCheck");
@@ -17,6 +19,8 @@ $(function() {
 			$(e.target).removeClass("indented activeCheck");
 		}
 	})
+
+	// NEXT QUESTION BUTTON 
 
 	nextQuestionButton.click(function() {
 		mainInputs.addClass("hidden");
@@ -37,6 +41,7 @@ $(function() {
 		$(this).addClass("selected");
 	})
 
+	// EDIT SECTION BUTTON
 
 	editSection.click(function() {
 		$(".editSection").addClass("hidden");

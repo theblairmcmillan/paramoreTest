@@ -39,8 +39,8 @@ form {
 			margin-right: 5px;
 		}
 
-		h5 {
-			color: #78715b;
+		.subtext {
+			color: $light-grey;
 		}
 
 		.editSection {
@@ -102,7 +102,7 @@ form {
 		.rightAlign {
 			text-align: right;
 			
-			h5 {
+			p {
 				font-size: 0.6em;
 				color: $light-grey;
 			}
