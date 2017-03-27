@@ -81,7 +81,8 @@ form #mainForm {
   form #mainForm .editSection {
     display: inline-block;
     cursor: pointer; }
-  form #mainForm input {
+  form #mainForm input,
+  form #mainForm #comeBack {
     cursor: pointer; }
   form #mainForm .inputCol {
     padding-top: 20px; }

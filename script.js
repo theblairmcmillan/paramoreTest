@@ -9,7 +9,7 @@ $(function() {
 	var whyYouRadioButtons = $("#whyYou .form-inputs label");
 	var nextQuestionButton = $("#mainForm .nextQuestion");
 	var editSection = $(".editSection");
-	var comeBackButton = $("#comeBackButton");
+	var comeBackButton = $("#comeBack");
 
 	// MAIN FORM INPUTS
 
