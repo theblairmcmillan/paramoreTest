@@ -20,6 +20,11 @@ $(function() {
 	nextQuestionButton.click(function() {
 		mainInputs.addClass("hidden");
 		$(this).addClass("hidden");
+		$("#mainCheck").removeClass("hidden");
+		$("#formInputs h5").first().css("padding-left", "20px");
+
+		$("#comeBack").addClass("hidden");
+		$('.editSection').removeClass("hidden");
 
 		whyYouContainer.removeClass("inactive").addClass("active");
 		whyYouInputs.removeClass("hidden");
